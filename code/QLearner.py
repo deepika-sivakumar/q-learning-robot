@@ -8,7 +8,7 @@ import random as rand
 class QLearner(object):
 
     def author(self):
-        return 'dsivakumar6'
+        return 'Deepika'
 
     def __init__(self, \
         num_states=100, \
@@ -131,4 +131,4 @@ class QLearner(object):
         self.q_table[s,a] = (1-self.alpha) * self.q_table[s,a] + self.alpha * (r + self.gamma * self.q_table[s_prime, max_action_prime])
 
 if __name__=="__main__":
-    print "Remember Q from Star Trek? Well, this isn't him"
+    print "Q Learner"
